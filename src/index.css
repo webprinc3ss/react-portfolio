@@ -175,13 +175,20 @@ nav {
   letter-spacing: 2px;
 }
 
-nav a {
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+nav li {
   color: #fff;
   font-size: 18px;
   padding-left: 20px;
 }
 
-nav a:hover {
+nav li:hover .navActive {
   color: #eaef3a;
 }
 
@@ -357,7 +364,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 150px;
   width: 100%;
   color:#FFFFFF; 
   background-color: #ff0d7b;

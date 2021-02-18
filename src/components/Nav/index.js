@@ -4,10 +4,12 @@ function Nav() {
 
     return (
         <nav>
-            <a href="/about">About</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/contact">Contact</a>
-            <a href="/resume">Resume</a>
+            <ul className="flex-row">
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+                <li>Resume</li>
+            </ul>
         </nav>
     );
 }
