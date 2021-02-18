@@ -435,8 +435,8 @@ ul {
   display: block;
 }
 
-nav {
-  font-size: 13px;
-
+nav li {
+  font-size: 15px;
 }
+
 }
