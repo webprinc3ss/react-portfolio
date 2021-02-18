@@ -17,49 +17,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="head-container">
-            <div class="right"><a href="/">homepage</a></div>
-            <h1>
-                <a href="/"><span class="headbracket">{ </span><span class="headmini">the</span>TECH<span
-                        class="headmini">blog</span><span class="headbracket">
-                        }</span></a>
+            <h1 class="right">
+                <a href="/"><span class="headbracket">
+                    </span><span class="headmini">Dani codes</span><span class="headbracket">
+                    </span></a>
             </h1>
+
+
             <nav>
-                {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
-                {{else}}
-                <a href="/login">login</a>
-                {{/if}}
+                <a href="/about">About</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/contact">Contact</a>
+                <a href="/resume">Resume</a>
             </nav>
         </div>
     </header>
     <main>
 
-        {{{ body }}}
+
 
 
     </main>
     <footer>
-        {{#if loggedIn}}
-        <span class="welcome">Welcome
-            {{user.username}}!</span>
-        <br><span class="logged-in">You are logged in.</span>
-        {{else}}
+
+        <span class="welcome">Welcome!
+        </span>
+        <br><span class="logged-in"></span>
+
         Thanks for visiting!
-        {{/if}}<br>
+        <br>
         <span class="copyends">© the</span><span class="copytech"> TECH
         </span></span><span class="copyends">blog</span>
     </footer>
 
-    {{#if loggedIn}}
+
     <script src="/javascript/logout.js"></script>
-    {{/if}}
+
 </body>
 
 </html>

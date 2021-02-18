@@ -11,6 +11,7 @@
     background-image: url("/images/colorful_code.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background: #250001;
   }
   
   body, html {
@@ -86,7 +87,7 @@
   
   header {
     height: 85px;
-    background-image: linear-gradient(black, #012764, #00378e);
+    background-image: linear-gradient(black, #590004, #a50104);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,17 +154,17 @@
   }
   
   .headmini {
-    font-size: 3.2vh;
+    font-size: 4.2vh;
     font-family: 'Lily Script One', cursive;
     margin-right: 3px;
     margin-left: 3px;
-    color: #fff;
+    color: #eaef3a;
   }
   
   .headbracket {
-    font-size: 4vh;
+    font-size: 5vh;
     font-family: 'Roboto', sans-serif;
-    color: #fa4568;
+    color: #f3f3f3;
   }
   
   nav {
@@ -172,11 +173,12 @@
   }
   
   nav a {
-    color: #eaef3a;
+    color: #f3f3f3;
+    padding-left: 10px;
   }
   
   nav a:hover {
-    color: #fff;
+    color: #eaef3a;
   }
   
   main {
@@ -413,5 +415,4 @@
     font-size: 13px;
   }
   }
-
- 
+  
