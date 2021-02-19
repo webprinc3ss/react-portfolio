@@ -3,7 +3,7 @@ import coverImage from '../../assets/img/pixels4.png';
 
 
 function Nav(props) {
-    const links = ['About', 'Portfolio', 'Contact', 'Resume'];
+    const { navPages = [], setCurrentPage, currentPage } = props;
 
     return (
         <div className="head-container">
