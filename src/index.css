@@ -183,13 +183,13 @@ ul {
 }
 
 
-nav li {
+nav li .navlink {
   color: #fff;
   font-size: 18px;
   padding-left: 20px;
 }
 
-nav li:hover .navActive {
+nav li:hover .navLink .active {
   color: #eaef3a;
 }
 

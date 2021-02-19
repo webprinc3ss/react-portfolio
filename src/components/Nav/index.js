@@ -4,6 +4,7 @@ import coverImage from '../../assets/img/pixels4.png';
 
 class Nav extends React.Component {
     render() {
+        const links = ['About', 'Porfolio', 'Contact', 'Resume'];
         return (
             <React.Fragment>
                 <div className="head-container">
@@ -13,10 +14,19 @@ class Nav extends React.Component {
                     </h1>
                     <nav>
                         <ul className="flex-row">
-                            <li>About</li>
-                            <li>Portfolio</li>
-                            <li>Contact</li>
-                            <li>Resume</li>
+                            {links.map(link => (
+                                <li key={link}>
+                                    <a href={'#' + link.toLowerCase()}
+                                        onClick={() => this.props.handlePageChange(link)}
+                                        className={
+                                            this.props.currentPage === link ? 'nav-link active' : 'navlink'
+                                        }
+                                    >
+                                        {link}
+                                    </a>
+                                </li>
+
+                            ))}
                         </ul>
                     </nav></div>
             </React.Fragment>
