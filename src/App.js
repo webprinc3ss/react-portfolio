@@ -8,11 +8,26 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
-  const [pages] = useState([About, Portfolio, Contact, Resume]);
+  const [navPages] = useState([
+    {
+      name: 'About me'
+    },
+    {
+      name: 'Portfolio'
+    },
+    {
+      name: 'Contact'
+    },
+    {
+      name: 'Resume'
+    },]);
+  console.log(navPages);
 
-  const [currentPage, setCurrentPage] = useState(pages[0]);
 
-  // const [items, currentPage, handlePageChange] = useState(items[0]);
+  const [currentPage, setCurrentPage] = useState(navPages[0]);
+  console.log(currentPage);
+  console.log(setCurrentPage);
+  console.log(navPages);
 
   // Add a switch statement that will return the appropriate component of the 'currentPage'
   // YOUR CODE HERE
@@ -37,7 +52,7 @@ function App() {
         currentPage={currentPage}
       ></Header>
       <main>
-        {displayComponent(currentPage)}
+        {renderPage(currentPage.name)}
       </main>
       <Footer></Footer>
     </div>

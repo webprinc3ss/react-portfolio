@@ -1,5 +1,6 @@
 import React from 'react';
 import coverImage from '../../assets/img/pixels4.png';
+import { lowerCase } from '../../utils/helpers';
 
 
 function Nav(props) {
@@ -14,15 +15,15 @@ function Nav(props) {
             <nav>
                 <ul className="flex-row">
                     {navPages.map((link) => (
-                        <li key={link}>
+                        <li key={link.name}>
                             <a
-                                href={'#' + link.toLowerCase()}
+                                href={'#' + lowerCase(link.name)}
                                 className={currentPage.name === link.name && 'navLink active'}
                                 onClick={() => {
                                     setCurrentPage(link);
                                 }}
                             >
-                                {link}
+                                {link.name}
                             </a>
                         </li>
                     ))}
