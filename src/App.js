@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   const [pages] = useState([About, Portfolio, Contact, Resume]);
 
-  const [currentPage, setCurrentPage] = useState(About);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   // const [items, currentPage, handlePageChange] = useState(items[0]);
 
@@ -31,9 +31,13 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
+      <Header
+        navPages={navPages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      ></Header>
       <main>
-        <About></About>
+        {displayComponent(currentPage)}
       </main>
       <Footer></Footer>
     </div>
