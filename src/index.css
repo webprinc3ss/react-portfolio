@@ -22,16 +22,6 @@ body, html {
   color: #fff;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color .5s;
-}
-
-a:hover {
-  color: #f80265;
-}
 
 button {
   background-color: #0067e8;
@@ -187,9 +177,24 @@ nav li .navlink {
   color: #fff;
   font-size: 18px;
   padding-left: 20px;
+  text-decoration: none;
+  transition: color .5s;
+
 }
 
 nav li:hover .navLink .active {
+  color: #eaef3a;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color .5s;
+}
+
+a:hover {
   color: #eaef3a;
 }
 
