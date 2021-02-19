@@ -5,6 +5,7 @@ import coverImage from '../../assets/img/pixels4.png';
 function Nav(props) {
     const { navPages = [], setCurrentPage, currentPage } = props;
 
+
     return (
         <div className="head-container">
             <h1 class="right">
@@ -12,13 +13,14 @@ function Nav(props) {
             </h1>
             <nav>
                 <ul className="flex-row">
-                    {links.map(link => (
+                    {navPages.map((link) => (
                         <li key={link}>
-                            <a href={'#' + link.toLowerCase()}
-                                onClick={() => this.props.handlePageChange(link)}
-                                className={
-                                    props.currentPage === link ? 'nav-link active' : 'navlink'
-                                }
+                            <a
+                                href={'#' + link.toLowerCase()}
+                                className={currentPage.name === link.name && 'navLink active'}
+                                onClick={() => {
+                                    setCurrentPage(link);
+                                }}
                             >
                                 {link}
                             </a>

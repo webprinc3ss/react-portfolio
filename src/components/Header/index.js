@@ -9,7 +9,8 @@ function Header(props) {
         <header>
             <Nav navPages={navPages}
                 setCurrentPage={setCurrentPage}
-                currentPage={currentPage}>
+                currentPage={currentPage}
+            >
             </Nav>
         </header >
     )
