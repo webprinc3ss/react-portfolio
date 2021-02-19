@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   const [navPages] = useState([
     {
-      name: 'About me'
+      name: 'About'
     },
     {
       name: 'Portfolio'
@@ -31,7 +31,7 @@ function App() {
 
   // Add a switch statement that will return the appropriate component of the 'currentPage'
   // YOUR CODE HERE
-  const renderPage = () => {
+  const renderPage = (currentPage) => {
     switch (currentPage) {
       case 'Contact':
         return <Contact />;
