@@ -173,7 +173,7 @@ ul {
 }
 
 
-nav li .navlink {
+nav li , .navlink {
   color: #fff;
   font-size: 18px;
   padding-left: 20px;
@@ -182,7 +182,7 @@ nav li .navlink {
 
 }
 
-nav li:hover .navLink .active {
+nav  li:hover ,.navLink ,.active {
   color: #eaef3a;
 }
 
