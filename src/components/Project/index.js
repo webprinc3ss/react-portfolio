@@ -5,7 +5,7 @@ function Project(props) {
         <section>
             <div className="card">
                 <div className="img-container">
-                    <img alt={props.name} src={props.image} />
+                    <img alt={props.name} src={"/assets/img/" + props.image} />
                 </div>
                 <div className="content">
                     <ul>
@@ -19,10 +19,7 @@ function Project(props) {
                             <strong>Technologies:</strong> {props.tech}
                         </li>
                         <li>
-                            <strong><a href={props.deployed}>Deployed</a></strong>
-                        </li>
-                        <li>
-                            <strong><a href={props.github}>Github</a></strong>
+                            <strong><a className="project-links" href={props.deployed}>Deployed</a></strong> | <strong><a className="project-links" href={props.github}>Github</a></strong>
                         </li>
                     </ul>
                 </div>

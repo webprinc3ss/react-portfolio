@@ -48,7 +48,7 @@
         "id": 6,
         "name": "Weather Map",
         "description": "Planning a trip? Compare weather in your destination cities!",
-        "image": "redrock.png",
+        "image": "redrock.jpg",
         "tech": "JavaScript | CSS | HTML | Bootstrap | Open Weather Map API",
         "deploy": "https://webprinc3ss.github.io/weather-dashboard/",
         "github": "https://github.com/webprinc3ss/weather-dashboard"
