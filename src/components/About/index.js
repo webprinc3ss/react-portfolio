@@ -5,19 +5,16 @@ function About() {
     return (
         <section>
 
-            <h2>Welcome</h2>
-            <p><img className="dani-image" src={daniImage} alt="Me" />Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah
+            {/* <h2>Welcome</h2> */}
+            <p className="center"><img className="dani-image" src={daniImage} alt="Me" /></p>
+            <p>
+                Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
+                blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
+                blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
+                blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
+                blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
+                blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
+                blah blah blah Blah blah blah blah blah Blah blah blah blah blah
             </p>
         </section>
     )

@@ -136,6 +136,7 @@ h1 {
 h2 {
   color:  #fff;
   text-align: center;
+  font-size: 30px;
 }
 
 h3 {
@@ -174,9 +175,13 @@ ul {
 }
 
 .dani-image {
-  height: 200px, 
-  width: 200px,
+  height: 150px; 
+  border-radius: 50%;
+  text-align: center;
+}
 
+p.center {
+  text-align: center;
 }
 
 
