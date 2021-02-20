@@ -37,10 +37,6 @@ function Contact() {
     };
 
     return (
-
-
-
-
         <section>
             <h2>Contact Me</h2>
             <p>You may send me an <a href="mailto:djabranton@gmail.com">email</a>, call me at 555.555.5555 or fill out the following form.

@@ -1,4 +1,4 @@
-export function lowerCase(string) {
+export function mergeAndLowerCaseWords(string) {
     return String(string).toLowerCase().split(" ").join("");
 }
 
