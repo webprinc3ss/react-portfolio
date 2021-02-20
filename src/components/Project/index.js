@@ -19,10 +19,10 @@ function Project(props) {
                             <strong>Technologies:</strong> {props.tech}
                         </li>
                         <li>
-                            <strong><a href={props.deployed} target={_new}>Deployed</a></strong>
+                            <strong><a href={props.deployed}>Deployed</a></strong>
                         </li>
                         <li>
-                            <strong><a href={props.github} target={_new}>Github</a></strong>
+                            <strong><a href={props.github}>Github</a></strong>
                         </li>
                     </ul>
                 </div>

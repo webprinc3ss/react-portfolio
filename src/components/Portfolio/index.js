@@ -1,6 +1,7 @@
 import React from 'react';
 import techBlog from '../../assets/img/tech_blog.jpg';
 import "../Wrapper/";
+import "../Project/";
 
 function Portfolio() {
     return (
@@ -27,10 +28,7 @@ function Portfolio() {
                                     <strong>Technologies:</strong> JavaScript | CSS | HTML | Node.js | Express Handlebars | Express | MySql2 | BCrypt | Dotenv | Heroku
                                 </li>
                                 <li>
-                                    <strong><a href="https://morning-inlet-04483.herokuapp.com/" >Deployed</a></strong>
-                                </li>
-                                <li>
-                                    <strong><a href="https://github.com/webprinc3ss/the-adventure-series">Github</a></strong>
+                                    <strong><a className="project-links" href="https://morning-inlet-04483.herokuapp.com/" >Deployed</a></strong> | <strong><a className="project-links" href="https://github.com/webprinc3ss/the-adventure-series">Github</a></strong>
                                 </li>
                             </ul>
                         </div>

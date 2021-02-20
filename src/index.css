@@ -159,6 +159,8 @@ ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
+  padding: 0px;
 }
 
 nav li , .navlink {
@@ -186,8 +188,17 @@ a:hover {
   color: #eaef3a;
 }
 
-main {
+a.project-links {
+  color: #ff0d7b;
 
+}
+
+a.project-links:hover {
+  color: #0067e8;
+
+}
+
+main {
   padding: 0% 25%;
   z-index: 8000;
   position: relative;
@@ -221,31 +232,6 @@ section {
   padding: 10px 10px;
 } 
 
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #eaef3a;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color .1s;
-  margin-left: 16px;
-}
-
-.btn-no-style:hover {
-  background: none;
-  color: #fff;
-}
-
-.delete-post-btn {
-  background-color: #ff643d;
-}
-
-.delete-post-btn:hover {
-  background-color: #f80265;
-}
 
 .byline {
   font-size: 90% !important;
@@ -304,6 +290,50 @@ footer {
 }
 
 /* Project Cards */
+.card {
+  background: #fff;
+  border-radius: 2px;
+  height: 325px;
+  margin: 0rem;
+  position: relative;
+  width: 325px;
+
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  background-color:#ff0d7b;
+}
+.card > .img-container > img {
+  width: 100%
+}
+
+.card > .content {
+  padding-left: .2rem;
+  padding-right: .2rem;
+  font-size: 12px;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+}
+
+.card > .content > ul > li {
+  /* margin-top: 18px; */
+  line-height: 18px;
+  color: black;
+  
+}
+/* 
+ul.card {
+  padding: 0px;
+} */
+
+
 
 
 
