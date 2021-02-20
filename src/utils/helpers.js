@@ -1,5 +1,5 @@
 export function lowerCase(string) {
-    return string.charAt(0).toLowerCase() + string.slice(1);
+    return String(string).toLowerCase().split(" ").join("");
 }
 
 export function capitalizeFirstLetter(string) {

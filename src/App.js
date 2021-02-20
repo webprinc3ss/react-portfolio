@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   const [navPages] = useState([
     {
-      name: 'About'
+      name: 'About Me'
     },
     {
       name: 'Portfolio'

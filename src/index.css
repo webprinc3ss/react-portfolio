@@ -317,7 +317,7 @@ section {
   font-size: 1.2em;
 } */
 
-.post .title span {
+/* .post .title span {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
@@ -339,7 +339,7 @@ section {
 
 .comment:nth-child(odd) {
   background-color: #d4e8ec;
-}
+} */
 
 .byline {
   font-size: 90% !important;
@@ -352,7 +352,7 @@ section {
   margin-bottom: .5%;
   opacity: .6;
 }
-
+/* 
 .new-post-form input {
   width: 100%;
 }
@@ -360,7 +360,7 @@ section {
 .edit-post-form {
   width: 100%;
   margin-bottom: 5%;
-}
+} */
 
 .spacebottom {
   margin-bottom: 100px;
@@ -406,6 +406,61 @@ footer {
   color: #fff;
   letter-spacing: 2px;
 }
+
+/* Project Cards */
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  height: 325px;
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  background:#6CADDC;
+}
+.card > .img-container > img {
+  width: 60%
+}
+
+.card > .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+}
+
+.card > .remove {
+  color: #ff1744;
+  font-size: 48px;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.card > .remove:hover {
+  color: #d50000;
+}
+
+
+
+
+
 
 @media screen and (max-width: 800px)  {
   main {
