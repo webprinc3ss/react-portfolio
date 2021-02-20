@@ -1,11 +1,32 @@
 import React from 'react';
 
-function Project() {
+function Project(props) {
     return (
         <section>
-
-
-
+            <div className="card">
+                <div className="img-container">
+                    <img alt={props.name} src={props.image} />
+                </div>
+                <div className="content">
+                    <ul>
+                        <li>
+                            <strong>Name:</strong> {props.name}
+                        </li>
+                        <li>
+                            <strong>Description:</strong> {props.description}
+                        </li>
+                        <li>
+                            <strong>Technologies:</strong> {props.tech}
+                        </li>
+                        <li>
+                            <strong><a href={props.deployed} target={_new}>Deployed</a></strong>
+                        </li>
+                        <li>
+                            <strong><a href={props.github} target={_new}>Github</a></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     )
 }

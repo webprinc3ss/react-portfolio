@@ -18,9 +18,13 @@ body, html {
   padding: 0;
   margin: 0 0 100px; 
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
+  font-size: 18px;
+  line-height:30px ;
 }
+
+
 
 
 button {
@@ -32,10 +36,12 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 button:hover {
-  background-color: #f80265;
+  background-color: yellow;
+  color: #ff0d7b;
 }
 
 /* .post-list {
@@ -54,7 +60,7 @@ textarea, input {
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #fa4568;
+  border: 2px solid #eaef3a;
 }
 
 textarea {
@@ -128,12 +134,8 @@ h1 {
 }
 
 h2 {
-  color:  #000;
-  /* text-align: center; */
-  /* font-size: 170%;
-  color:  #000;
+  color:  #fff;
   text-align: center;
-  letter-spacing: 2px; */
 }
 
 h3 {
@@ -169,6 +171,11 @@ ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.dani-image {
+  height: 200px, 
+  width: 200px,
 
 }
 
@@ -203,6 +210,7 @@ main {
   padding: 0% 25%;
   z-index: 8000;
   position: relative;
+  background-color: #ff0d7b;
   background-attachment: fixed;
   /* display: flex; */
   /* justify-content: center; */
@@ -256,7 +264,7 @@ section {
   margin-bottom:100px;
 } */
 
-.section-form {
+/* .section-form {
   background-attachment: scroll;
   box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
   padding: 10px 20px;
@@ -267,13 +275,13 @@ section {
   width:100%;
   margin-bottom:100px;
   min-width: 375px;
-}
+} */
 
-.form-center {
+/* .form-center {
   display: flex;
   justify-content: center;
   width: 300px;
-}
+} */
 
 .btn-no-style {
   background: none;
@@ -293,10 +301,10 @@ section {
   color: #fff;
 }
 
-.login-form .signup-form {
+/* .login-form .signup-form {
   width: 200px;
   line-height: 25px;
-}
+} */
 
 .delete-post-btn {
   background-color: #ff643d;
@@ -370,7 +378,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 150px;
+  /* height: 150px; */
   width: 100%;
   color:#FFFFFF; 
   background-color: #ff0d7b;
@@ -408,57 +416,6 @@ footer {
 }
 
 /* Project Cards */
-
-.card {
-  background: #fff;
-  border-radius: 2px;
-  height: 325px;
-  margin: 1rem;
-  position: relative;
-  width: 325px;
-  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-  text-align: left;
-}
-
-.card > .img-container {
-  height: 60%;
-  overflow: hidden;
-  text-align: center;
-  background:#6CADDC;
-}
-.card > .img-container > img {
-  width: 60%
-}
-
-.card > .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
-}
-
-.card > .content > ul {
-  list-style-type: none;
-}
-
-.card > .content > ul > li {
-  margin-top: 18px;
-}
-
-.card > .remove {
-  color: #ff1744;
-  font-size: 48px;
-  position: absolute;
-  top: -20px;
-  right: 5px;
-  cursor: pointer;
-}
-
-.card > .remove:hover {
-  color: #d50000;
-}
-
-
-
 
 
 
