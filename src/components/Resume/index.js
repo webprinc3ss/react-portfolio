@@ -6,18 +6,7 @@ function Resume() {
 
             <h2>Resume</h2>
 
-            <p>Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-            blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-            blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah
+            <p>You may view my resume here.
             </p>
         </section>
     )

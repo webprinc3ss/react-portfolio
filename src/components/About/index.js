@@ -5,9 +5,9 @@ function About() {
     return (
         <section>
 
-            {/* <h2>Welcome</h2> */}
+            <h2>Welcome</h2><br></br>
             <p className="center"><img className="dani-image" src={daniImage} alt="Me" /></p>
-            <p>
+            <p><br></br>
                 Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
                 blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
                 blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
