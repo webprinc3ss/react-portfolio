@@ -7,20 +7,22 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 
+const navPages = [
+  {
+    name: 'About Me'
+  },
+  {
+    name: 'Portfolio'
+  },
+  {
+    name: 'Contact'
+  },
+  {
+    name: 'Resume'
+  }];
+
 function App() {
-  const [navPages] = useState([
-    {
-      name: 'About Me'
-    },
-    {
-      name: 'Portfolio'
-    },
-    {
-      name: 'Contact'
-    },
-    {
-      name: 'Resume'
-    },]);
+
   console.log(navPages);
 
 
