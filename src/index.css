@@ -205,6 +205,12 @@ main {
   text-align: center;
 }
 
+.laptop {
+  width: 250px;
+  text-align: center;
+  padding-top: 40px;
+}
+
 p.center {
   text-align: center;
 }

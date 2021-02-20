@@ -1,4 +1,5 @@
 import React from 'react';
+import laptop from '../../assets/img/laptop.png';
 
 function Resume() {
     return (
@@ -6,8 +7,11 @@ function Resume() {
 
             <h2>Resume</h2>
 
-            <p>You may view my resume here.
+            <p><a href="#">View</a>
             </p>
+
+            <img src={laptop} alt="laptop" className="laptop" />
+
         </section>
     )
 }
