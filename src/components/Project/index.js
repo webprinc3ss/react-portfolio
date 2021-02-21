@@ -4,24 +4,29 @@ function Project(props) {
     return (
         <section>
             <div className="card">
+                <div className="card-header">
+                    <h4>
+                        {props.name}
+                    </h4>
+                </div>
                 <div className="img-container">
                     <img alt={props.name} src={"/assets/img/" + props.image} />
                 </div>
                 <div className="content">
                     <ul>
                         <li>
-                            <strong>Name:</strong> {props.name}
-                        </li>
-                        <li>
                             <strong>Description:</strong> {props.description}
                         </li>
                         <li>
-                            <strong>Technologies:</strong> {props.tech}
+                            <strong>Technologies:</strong> {props.tech}<br />
                         </li>
-                        <li>
-                            <strong><a className="project-links" href={props.deployed}>Deployed</a></strong> | <strong><a className="project-links" href={props.github}>Github</a></strong>
-                        </li>
+
                     </ul>
+                </div>
+                <div className="card-footer">
+                    <li>
+                        <strong><a className="project-links" href={props.deployed}>Deployed</a></strong> | <strong><a className="project-links" href={props.github}>Github</a></strong>
+                    </li>
                 </div>
             </div>
         </section>

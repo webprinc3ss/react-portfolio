@@ -7,15 +7,9 @@ function About() {
 
             <h2>Welcome</h2><br></br>
             <p className="center"><img className="dani-image" src={daniImage} alt="Me" /></p>
-            <p><br></br>
-                Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-                blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-                blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-                blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-                blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah
-                blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah Blah blah
-                blah blah blah Blah blah blah blah blah Blah blah blah blah blah
-            </p>
+            <div className="about-container"><p><br></br>
+            My background is web design and website administration. My strengths include matching a technology with a need and the ability to integrate the solution. Now I am happy to learn some of these technologies myself and share the laatest projects I've created on my journey to become a full stack web developer!
+            </p></div>
         </section>
     )
 }
