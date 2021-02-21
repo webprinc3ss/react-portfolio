@@ -1,12 +1,30 @@
 [
     {
         "id": 1,
-        "name": "Code Quiz",
-        "description": "A JavaScript quiz to test your coding knowledge.",
-        "image": "codequiz_screenshot.png",
-        "tech": "JavaScript | CSS | HTML",
-        "deploy": "https://webprinc3ss.github.io/code-quiz/",
-        "github": "https://github.com/webprinc3ss/code-quiz"
+        "name": "The Tech Blog",
+        "description": "A full stack CMS blog designed in the MVC paradigm.",
+        "image": "tech_blog.jpg",
+        "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express | MySql2 | BCrypt | Dotenv | Heroku",
+        "deploy": "https://morning-inlet-04483.herokuapp.com/",
+        "github": "https://github.com/webprinc3ss/tech-blog"
+    },
+    {
+        "id": 2,
+        "name": "Adventure Series",
+        "description": "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        "image": "adventure_series.jpg",
+        "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express-Session | MySql2 | Passport | Passport-Strava | Cookie-Parser | Connect-Session-Sequelize | Connect-Ensure-Login | Heroku",
+        "deploy": "https://damp-anchorage-73357.herokuapp.com/",
+        "github": "https://github.com/webprinc3ss/the-adventure-series"
+    },
+    {
+        "id": 6,
+        "name": "Weather Map",
+        "description": "Planning a trip? Compare weather in your destination cities!",
+        "image": "redrock.jpg",
+        "tech": "JavaScript | CSS | HTML | Bootstrap | Open Weather Map API",
+        "deploy": "https://webprinc3ss.github.io/weather-dashboard/",
+        "github": "https://github.com/webprinc3ss/weather-dashboard"
     },
     {
         "id": 2,
@@ -18,39 +36,21 @@
         "github": "https://github.com/webprinc3ss/budget-tracker"
     },
     {
-        "id": 3,
-        "name": "The Tech Blog",
-        "description": "A full stack CMS blog designed in the MVC paradigm.",
-        "image": "tech_blog.jpg",
-        "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express | MySql2 | BCrypt | Dotenv | Heroku",
-        "deploy": "https://morning-inlet-04483.herokuapp.com/",
-        "github": "https://github.com/webprinc3ss/tech-blog"
-    },
-    {
-        "id": 4,
-        "name": "Adventure Series",
-        "description": "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
-        "image": "adventure_series.jpg",
-        "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express-Session | MySql2 | Passport | Passport-Strava | Cookie-Parser | Connect-Session-Sequelize | Connect-Ensure-Login | Heroku",
-        "deploy": "https://damp-anchorage-73357.herokuapp.com/",
-        "github": "https://github.com/webprinc3ss/the-adventure-series"
+        "id": 1,
+        "name": "Code Quiz",
+        "description": "A JavaScript quiz to test your coding knowledge.",
+        "image": "codequiz_screenshot.png",
+        "tech": "JavaScript | CSS | HTML",
+        "deploy": "https://webprinc3ss.github.io/code-quiz/",
+        "github": "https://github.com/webprinc3ss/code-quiz"
     },
     {
         "id": 5,
-        "name": "Scheduler",
+        "name": " Work-Day Scheduler",
         "description": "Plan your workday with this scheduling app that saves your tasks to local storage.",
         "image": "scheduler.png",
         "tech": "JQuery | CSS | HTML | Bootstrap | JavaScript",
         "deploy": "https://webprinc3ss.github.io/scheduler/",
         "github": "https://github.com/webprinc3ss/scheduler"
-    },
-    {
-        "id": 6,
-        "name": "Weather Map",
-        "description": "Planning a trip? Compare weather in your destination cities!",
-        "image": "redrock.jpg",
-        "tech": "JavaScript | CSS | HTML | Bootstrap | Open Weather Map API",
-        "deploy": "https://webprinc3ss.github.io/weather-dashboard/",
-        "github": "https://github.com/webprinc3ss/weather-dashboard"
     }
 ]

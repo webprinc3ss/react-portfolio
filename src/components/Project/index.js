@@ -24,12 +24,12 @@ function Project(props) {
                     </ul>
                 </div>
                 <div className="card-footer">
-                    <li>
+                    <h5>
                         <strong><a className="project-links" href={props.deployed}>Deployed</a></strong> | <strong><a className="project-links" href={props.github}>Github</a></strong>
-                    </li>
+                    </h5>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
