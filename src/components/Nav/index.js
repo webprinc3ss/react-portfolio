@@ -17,7 +17,8 @@ function Nav(props) {
                     {navPages.map((link) => (
                         <li key={link.name}>
                             <a
-                                href={'#' + mergeAndLowerCaseWords(link.name)}
+                                // href={'#' + mergeAndLowerCaseWords(link.name)} 
+                                // cursor-pointer
                                 className={currentPage.name === link.name && 'navLink active'}
                                 onClick={() => {
                                     setCurrentPage(link);
