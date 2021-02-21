@@ -13,7 +13,7 @@ function Nav(props) {
                 <a href="/">Dani codes</a><img src={coverImage} style={{ height: "30px", width: "30px" }} alt="pixels" />
             </h1>
             <nav>
-                <ul className="flex-row">
+                <ul className="flex-row navUl">
                     {navPages.map((link) => (
                         <li key={link.name}>
                             <a

@@ -13,7 +13,7 @@ function Project(props) {
                     <img alt={props.name} src={"/assets/img/" + props.image} />
                 </div>
                 <div className="content">
-                    <ul>
+                    <ul className="cardLi">
                         <li>
                             <strong>Description:</strong> {props.description}
                         </li>

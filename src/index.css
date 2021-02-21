@@ -117,11 +117,17 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-align:right;
+  padding-inline-start: 0px;
+  /* text-align:right; */
 
   /* margin-top: 5px;
   padding: 5px; */
   /* align-self: baseline; */
+}
+
+ul.navUl {
+  text-align:right; 
+  padding-inline-start:  60px;
 }
 
 nav li , .navlink {
@@ -377,6 +383,13 @@ span ,.copyends {
   /* background-color: darkblue; */
   text-align: center;
   overflow: hidden;
+}
+
+ul .cardLi {
+text-align: left !important;
+padding-right: 0px;
+display:block;
+
 }
 
 h4 {
