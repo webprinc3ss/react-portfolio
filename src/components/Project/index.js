@@ -24,7 +24,7 @@ function Project(props) {
                     </ul>
                 </div>
                 <div className="card-footer">
-                    <h5>
+                    <h5 class="cardH5">
                         <strong><a className="project-links" href={props.deployed}>Deployed</a></strong> | <strong><a className="project-links" href={props.github}>Github</a></strong>
                     </h5>
                 </div>
