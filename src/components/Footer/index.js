@@ -11,9 +11,9 @@ function Footer() {
                 <a href="https://twitter.com/webprincess"><i class="fab fa-twitter"></i></a>
 
             </p>
-            {/* <span className="copyends">
+            <span className="copyends">
                 © webprinc3ss
-            </span> */}
+            </span>
         </footer>
 
     )
