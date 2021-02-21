@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "The Tech Blog",
-        "description": "A full stack CMS blog designed in the MVC paradigm.",
+        "description": "A full stack CMS blog designed in the MVC paradigm. Users sign up and log in.  Post, update and delete blog posts. Comment on posts. Password encrypted. SQL storage.",
         "image": "tech_blog.jpg",
         "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express | MySql2 | BCrypt | Dotenv | Heroku",
         "deploy": "https://morning-inlet-04483.herokuapp.com/",
@@ -20,7 +20,7 @@
     {
         "id": 6,
         "name": "Weather Map",
-        "description": "Planning a trip? Compare weather in your destination cities!",
+        "description": "Planning a trip? Compare weather in your destination cities! Most-viewed cities are saved alphabetically descending in Local Storage and displayed on the page.",
         "image": "redrock.jpg",
         "tech": "JavaScript | CSS | HTML | Bootstrap | Open Weather Map API",
         "deploy": "https://webprinc3ss.github.io/weather-dashboard/",
@@ -38,7 +38,7 @@
     {
         "id": 1,
         "name": "Code Quiz",
-        "description": "A JavaScript quiz to test your coding knowledge.",
+        "description": "A JavaScript quiz to test a user's coding knowledge. A timer counts down and wrong/correct answers are indicated. High scores saved to Local Storage.",
         "image": "codequiz_screenshot.png",
         "tech": "JavaScript | CSS | HTML",
         "deploy": "https://webprinc3ss.github.io/code-quiz/",
@@ -47,7 +47,7 @@
     {
         "id": 5,
         "name": " Work-Day Scheduler",
-        "description": "Plan your workday with this scheduling app that saves your tasks to local storage.",
+        "description": "Plan your workday with this scheduling app that saves your tasks to local storage. During the hours of 9-5 tasks are color-coded to indicate past, present and future.",
         "image": "scheduler.png",
         "tech": "JQuery | CSS | HTML | Bootstrap | JavaScript",
         "deploy": "https://webprinc3ss.github.io/scheduler/",
