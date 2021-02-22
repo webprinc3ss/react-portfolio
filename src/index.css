@@ -393,6 +393,8 @@ h4 {
 
 
 h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 24px;
   line-height: 30px;
   color: #eaef3a;
@@ -426,7 +428,7 @@ p.skills {
 
 @media screen and (max-width: 800px)  {
   header {
-  height: 120px;
+  height: 130px;
   }
   main {
     padding: 0;
@@ -463,6 +465,10 @@ p {
 
 ul {
   display: block;
+}
+
+nav {
+  margin-top: 0px;
 }
 
 nav li {

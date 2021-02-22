@@ -1,5 +1,4 @@
 import React from 'react';
-import laptop from '../../assets/img/laptop.png';
 
 function Resume() {
     return (
@@ -30,14 +29,8 @@ function Resume() {
                     <p className="skills">My Sequel, Sequelize</p>
                     <p className="skills">MongoDB, Mongoose</p>
                     <p className="skills">Handlebars</p>
-                    {/* <p className="skills">Bootstrap</p> */}
-
                 </div>
-
             </div>
-
-
-
         </section>
     )
 }
