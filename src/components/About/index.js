@@ -3,7 +3,7 @@ import daniImage from '../../assets/img/me.jpg';
 
 function About() {
     return (
-        <section>
+        <section id="container">
 
             <h2>Welcome</h2><br></br>
             <p className="center"><img className="dani-image" src={daniImage} alt="Me" /></p>

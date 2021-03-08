@@ -37,7 +37,7 @@ function Contact() {
     };
 
     return (
-        <section>
+        <section id="container">
             <h2>Contact Me</h2>
             <h4 className="contactH4"><b><a href="mailto:djabranton@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 0 2 . 5 5 5 . 5 5 5 5</b></h4>
             <form onSubmit={handleSubmit}>

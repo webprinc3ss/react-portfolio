@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
     return (
-        <section>
+        <section id="container">
 
             <h2>Resume</h2>
             <h4><a href="https://docs.google.com/document/d/1GtRqjSDouVMHkc4ZLZ9N_Uk4OES5IyDuAwxkwwyCJPs/edit?usp=sharing" target="_new">Download</a></h4>

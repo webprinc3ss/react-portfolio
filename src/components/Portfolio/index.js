@@ -5,7 +5,7 @@ import projects from '../../projects.json';
 
 function Portfolio() {
     return (
-        <section>
+        <section id="container">
             <h2>Portfolio</h2>
             <Wrapper>
                 {
