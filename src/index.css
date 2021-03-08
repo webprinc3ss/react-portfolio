@@ -330,6 +330,16 @@ span ,.copyends {
   letter-spacing: 2px;
 }
 
+.icon {
+  color: #FFFFFF;
+  font-weight: bold;
+  transition: color .5s;
+}
+
+.icon:hover {
+  color: #eaef3a;
+}
+
 /* Project Cards */
 .card {
   background: #fff;
@@ -412,6 +422,7 @@ h4 {
   padding-top: 1%;
   padding-bottom: 2%;
   margin: 0px;
+  color: #fff;
 }
 
 
@@ -421,7 +432,7 @@ h5 {
   margin-bottom: 0px;
   font-size: 24px;
   line-height: 30px;
-  color: #eaef3a;
+  color: darkblue;
   text-align: left;
 }
 
@@ -505,7 +516,10 @@ form {
 
 .contactH4 {
   padding-bottom: 20px;
+  color: darkblue !important;
 }
+
+.contact {color:darkblue}
 
 .grid-container {
   display: grid;
