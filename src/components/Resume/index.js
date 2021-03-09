@@ -8,7 +8,6 @@ function Resume() {
             <h4><a href="https://docs.google.com/document/d/1GtRqjSDouVMHkc4ZLZ9N_Uk4OES5IyDuAwxkwwyCJPs/edit?usp=sharing" target="_new">Download</a></h4>
             <div class="grid-container">
                 <div class="grid-item">
-
                     <h5>Front-End Proficiencies</h5>
                     <p className="skills">HTML</p>
                     <p className="skills">CSS</p>
@@ -21,11 +20,11 @@ function Resume() {
 
                 </div>
                 <div class="grid-item">
-
                     <h5>Back-End Proficiencies</h5>
                     <p className="skills">API's</p>
                     <p className="skills">Node.js</p>
                     <p className="skills">Express, Express-Session</p>
+                    <p className="skills">GraphQL</p>
                     <p className="skills">My Sequel, Sequelize</p>
                     <p className="skills">MongoDB, Mongoose</p>
                     <p className="skills">Handlebars</p>

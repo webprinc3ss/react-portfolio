@@ -11,8 +11,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: pink;
-  background-image: url('assets/img/hrrrhcwwarx.jpeg');
+  background-image: url('assets/img/hrrrhcwwarx3.jpg');
 }
+
 
 body, html {
   height: 100%;
@@ -31,7 +32,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 1%;
- background-color: #ff0d7b;
+ background-color: #AC30C6;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -196,6 +197,7 @@ p.center {
 
 section {
   background-attachment: scroll;
+  margin-top: 20px;
   padding: 10px 10px;
 }
 
@@ -288,7 +290,7 @@ footer {
   bottom: 0;
   width: 100%;
   color:#FFFFFF; 
-  background-color: #ff0d7b;
+  background-color: #AC30C6;
   font-size:1.5em;
   line-height: 24px;
   text-align: center;
@@ -301,7 +303,8 @@ footer {
 footer p {
   padding: 0px;
   margin-top: 15px;
-  margin-bottom: 2px
+  margin-bottom: 2px;
+  font-size: 20px;
 }
 
 .fab ,.fa-github, .fa-linkedin, .fa-twitter  {
@@ -422,7 +425,17 @@ h4 {
   padding-top: 1%;
   padding-bottom: 2%;
   margin: 0px;
+  color: darkblue;
+  font-size: 20px;
+}
+
+h6 {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  margin: 0px;
   color: #fff;
+  font-size: 20px;
 }
 
 

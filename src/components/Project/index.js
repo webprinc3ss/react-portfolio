@@ -5,9 +5,9 @@ function Project(props) {
         <section>
             <div className="card">
                 <div className="card-header">
-                    <h4>
+                    <h6>
                         {props.name}
-                    </h4>
+                    </h6>
                 </div>
                 <div className="img-container">
                     <img alt={props.name} src={"https://webprinc3ss.github.io/react-portfolio/assets/img/" + props.image} />
