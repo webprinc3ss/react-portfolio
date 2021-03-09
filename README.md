@@ -9,7 +9,7 @@
   4. [Questions](#questions)
   
 ## Description
-This project is created with React. It's a one page SPA (single page application) wherein clicking each navigation item triggers a replacement of the main content and a change of the navigation item.  This website is mobile-friendly.
+This project is created with React. It is a one page SPA (single page application) wherein clicking each navigation item triggers a replacement of the main content and a change of the navigation item.  This website is mobile-friendly.
 
 ## Built With
 - React
