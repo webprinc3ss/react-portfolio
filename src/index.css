@@ -151,6 +151,18 @@ a:hover {
   color: #eaef3a;
 }
 
+a.inner {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+  transition: color .5s;
+}
+
+a.inner:hover {
+  color: #ff0d7b;
+}
+
+
 a.project-links {
   color: #ff0d7b;
 
