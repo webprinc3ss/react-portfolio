@@ -43,6 +43,7 @@ function Resume() {
                     <p className="skills">Help Desk</p>
                     <p className="skills">Training and Support</p>
                     <p className="skills">Bootstrap</p>
+                    <br /><br /><br /><br />
                 </div>
                 <div class="grid-item">
                     <h5>Other Skills</h5>
@@ -54,6 +55,7 @@ function Resume() {
                 </div>
             </div>
         </section>
+
     )
 }
 
