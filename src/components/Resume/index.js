@@ -19,6 +19,7 @@ function Resume() {
                     <p className="skills">Semantic Ui React</p>
                     <p className="skills">Cloudinary</p>
                     <p className="skills">Word Press Customization</p>
+                    <p className="skills">Woo Commerce</p>
                 </div>
                 <div class="grid-item">
                     <h5>Back-End Proficiencies</h5>
@@ -37,6 +38,8 @@ function Resume() {
                 </div>
                 <div class="grid-item">
                     <h5>Web Administration</h5>
+                    <p className="skills">Github</p>
+                    <p className="skills">FTP</p>
                     <p className="skills">Google Ads</p>
                     <p className="skills">Drupal CMS</p>
                     <p className="skills">Google Adwords</p>
