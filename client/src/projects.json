@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Mustfit Pets",
+        "description": "Full stack MERN application to match harder-to-adopt pets with potential owners. Shelter staff can submit pets for adoption. Adopters can search for pets and save pets to their dashboard. Pets can be removed from your dashboard",
+        "image": "mustfit.jpg",
+        "tech": "React | MongoDB | Graphql | Node.js | Mongoose | Apollo Client | PWA | BCrypt | JWT Toekn | Faker | Heroku",
+        "deploy": "https://quiet-refuge-60774.herokuapp.com/",
+        "github": "https://github.com/calistamayer/pet-adoption"
+    },
+    {
+        "id": 3,
+        "name": "The Tech Blog",
+        "description": "A full stack CMS blog designed in the MVC paradigm. Users sign up and log in.  Post, update and delete blog posts. Comment on posts. Password encrypted. SQL storage.",
+        "image": "tech_blog.jpg",
+        "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express | MySql2 | BCrypt | Dotenv | Heroku",
+        "deploy": "https://morning-inlet-04483.herokuapp.com/",
+        "github": "https://github.com/webprinc3ss/tech-blog"
+    },
+    {
+        "id": 2,
+        "name": "Adventure Series",
+        "description": "Full Stack MVC project. An MVP of a bike adventure site where competitors can submit their rides and the admin can post to a leaderboard. Log in with Strava.",
+        "image": "adventure_series.jpg",
+        "tech": "JavaScript | CSS | HTML | Node.js | Express Handlebars | Express-Session | MySql2 | Passport | Passport-Strava | Cookie-Parser | Connect-Session-Sequelize | Connect-Ensure-Login | Heroku",
+        "deploy": "https://damp-anchorage-73357.herokuapp.com/",
+        "github": "https://github.com/webprinc3ss/the-adventure-series"
+    },
+    {
+        "id": 4,
+        "name": "Weather Map",
+        "description": "Planning a trip? Compare weather in your destination cities! Most-viewed cities are saved alphabetically descending in Local Storage and displayed on the page.",
+        "image": "redrock.jpg",
+        "tech": "JavaScript | CSS | HTML | Bootstrap | Open Weather Map API",
+        "deploy": "https://webprinc3ss.github.io/weather-dashboard/",
+        "github": "https://github.com/webprinc3ss/weather-dashboard"
+    },
+    {
+        "id": 5,
+        "name": "Budget Tracker",
+        "description": "A budget tracker for the traveler to keep track of expenses with or without a data connection. Can be saved as a PWA to one's device.",
+        "image": "budget_tracker.png",
+        "tech": "JavaScript | CSS | HTML | Node.js | webpack | Express | MongoDB | Mongoose | Heroku",
+        "deploy": "https://secure-wave-10455.herokuapp.com/",
+        "github": "https://github.com/webprinc3ss/budget-tracker"
+    },
+    {
+        "id": 6,
+        "name": "Code Quiz",
+        "description": "A JavaScript quiz to test a user's coding knowledge. A timer counts down and wrong/correct answers are indicated. High scores saved to Local Storage.",
+        "image": "codequiz_screenshot.png",
+        "tech": "JavaScript | CSS | HTML",
+        "deploy": "https://webprinc3ss.github.io/code-quiz/",
+        "github": "https://github.com/webprinc3ss/code-quiz"
+    },
+    {
+        "id": 7,
+        "name": " Work-Day Scheduler",
+        "description": "Plan your workday with this scheduling app that saves your tasks to local storage. During the hours of 9-5 tasks are color-coded to indicate past, present and future.",
+        "image": "scheduler.png",
+        "tech": "JQuery | CSS | HTML | Bootstrap | JavaScript",
+        "deploy": "https://webprinc3ss.github.io/scheduler/",
+        "github": "https://github.com/webprinc3ss/scheduler"
+    }
+]
