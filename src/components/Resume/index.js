@@ -33,6 +33,7 @@ function Resume() {
                     <p className="skills">Apollo Server</p>
                     <p className="skills">Multiparty</p>
                     <p className="skills">PWA's</p>
+                    <p className="skills">Heroku</p>
                 </div>
                 <div class="grid-item">
                     <h5>Web Administration</h5>
@@ -49,9 +50,10 @@ function Resume() {
                     <h5>Other Skills</h5>
                     <p className="skills">Adobe PhotoShop</p>
                     <p className="skills">Adobe Illustrator</p>
-                    <p className="skills">Presentation and Meeting Facilitation</p>
+                    <p className="skills">Presentation and Facilitation</p>
                     <p className="skills">Customer Service Phones</p>
                     <p className="skills">Event Planning</p>
+                    <p className="skills">Retail Sales</p>
                 </div>
             </div>
         </section>
