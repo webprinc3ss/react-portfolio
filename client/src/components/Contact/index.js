@@ -8,12 +8,12 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, subject, message } = formState;
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log('Submit Form', formState);
-        }
-    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (!errorMessage) {
+    //         console.log('Submit Form', formState);
+    //     }
+    // };
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
@@ -36,21 +36,28 @@ function Contact() {
         }
     };
 
-    function submitEmail(e) {
+    function handleSubmit(e) {
         e.preventDefault();
 
-        axios({
-            method: "POST",
-            url: "/send",
-            data: formState
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                resetForm(formState)
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-            }
-        })
+        axios.post('http://localhost:4000/users/create', formState)
+            .then((res) => {
+                console.log(res.data)
+            }).catch((error) => {
+                console.log(error)
+            });
+
+        // axios({
+        //     method: "POST",
+        //     url: "/send",
+        //     data: formState
+        // }).then((response) => {
+        //     if (response.data.status === 'success') {
+        //         alert("Message Sent.");
+        //         resetForm(formState)
+        //     } else if (response.data.status === 'fail') {
+        //         alert("Message failed to send.")
+        //     }
+        // })
     };
 
     function resetForm() {
