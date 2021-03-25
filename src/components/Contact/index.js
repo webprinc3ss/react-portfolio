@@ -1,12 +1,12 @@
+import axios from 'axios';
 import React, { useState } from 'react';
-
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
 
     const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, message } = formState;
+    const { name, email, subject, message } = formState;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -36,6 +36,27 @@ function Contact() {
         }
     };
 
+    function submitEmail(e) {
+        e.preventDefault();
+
+        axios({
+            method: "POST",
+            url: "/send",
+            data: formState
+        }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+                resetForm(formState)
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
+        })
+    };
+
+    function resetForm() {
+        setFormState({ name: '', email: '', subject: '', message: '' })
+    }
+
     return (
         <section id="container">
             <h2>Contact Me</h2>
@@ -48,6 +69,10 @@ function Contact() {
                 <div>
                     <label htmlFor="email">Email address:</label>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                </div>
+                <div>
+                    <label htmlFor="subject">Subject:</label>
+                    <input name="subject" rows="5" defaultValue={subject} onBlur={handleChange} />
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
