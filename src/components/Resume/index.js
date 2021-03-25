@@ -57,6 +57,7 @@ function Resume() {
                     <p className="skills">Customer Service Phones</p>
                     <p className="skills">Event Planning</p>
                     <p className="skills">Retail Sales</p>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </div>
         </section>
