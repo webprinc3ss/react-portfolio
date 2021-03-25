@@ -5,7 +5,7 @@ function Resume() {
         <section id="container">
 
             <h2>Resume</h2>
-            <h4><a href="https://docs.google.com/document/d/1GtRqjSDouVMHkc4ZLZ9N_Uk4OES5IyDuAwxkwwyCJPs/edit?usp=sharing" target="_new">Download</a></h4>
+            <h4><a href="https://docs.google.com/document/d/1GtRqjSDouVMHkc4ZLZ9N_Uk4OES5IyDuAwxkwwyCJPs/edit?usp=sharing" target="_new" className="resume">Download</a></h4>
             <div class="grid-container">
                 <div class="grid-item">
                     <h5>Front-End Proficiencies</h5>

@@ -151,6 +151,18 @@ a:hover {
   color: #eaef3a;
 }
 
+a.resume {
+  text-decoration: none;
+  color: #ff0d7b;
+  font-weight: bold;
+  transition: color .5s;
+  cursor: pointer;
+}
+
+a.resume:hover {
+  color: #AC30C6;
+}
+
 a.inner {
   text-decoration: none;
   color: darkblue;
