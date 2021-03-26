@@ -41,7 +41,9 @@ function Contact() {
 
         axios.post('http://localhost:4000/users/create', formState)
             .then((res) => {
-                console.log(res.data)
+                console.log(res.data);
+                e.target.reset();
+                setFormState("")
             }).catch((error) => {
                 console.log(error)
             });
