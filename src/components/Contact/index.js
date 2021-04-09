@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+import emailjs from 'emailjs-com';
 import { validateEmail } from '../../utils/helpers';
+
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -8,12 +9,12 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log('Submit Form', formState);
-        }
-    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (!errorMessage) {
+    //         console.log('Submit Form', formState);
+    //     }
+    // };
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
@@ -34,6 +35,27 @@ function Contact() {
             setFormState({ ...formState, [e.target.name]: e.target.value });
             console.log('Handle Form', formState);
         }
+    };
+
+
+    console.log(process.env)
+    function handleSubmit(e) {
+        e.preventDefault();
+        emailjs.sendForm(
+            'REACT_APP_SERVICE',
+            'REACT_APP_TEMPLATE',
+            e.target,
+            'REACT_APP_EMAILJS_API_KEY'
+
+        )
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+        setFormState({ name: '', email: '', message: '' });
+
     };
 
     return (

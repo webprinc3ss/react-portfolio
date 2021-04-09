@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 
+
 const navPages = [
   {
     name: 'About Me'
