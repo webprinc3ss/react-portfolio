@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import axios from 'axios'
 import { validateEmail } from '../../utils/helpers';
+
+const GOOGLE_FORM_NAME_ID = 'entry.1249636003'
+const GOOGLE_FORM_EMAIL_ID = 'entry.905026920'
+const GOOGLE_FORM_MESSAGE_ID = 'entry.1193345509'
+const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfmn0zTMFMzg2mRGU6-B52T3qOEriwtjG1s7tv3-KTT2FWjug/formResponse'
 
 
 function Contact() {
@@ -38,21 +44,22 @@ function Contact() {
     };
 
 
-    console.log(process.env)
     function handleSubmit(e) {
         e.preventDefault();
-        emailjs.sendForm(
-            'REACT_APP_SERVICE',
-            'REACT_APP_TEMPLATE',
-            e.target,
-            'REACT_APP_EMAILJS_API_KEY'
+        const formData = new FormData();
+        formData.append(GOOGLE_FORM_NAME_ID, formState.name)
+        console.log('Append Name', formData)
+        formData.append(GOOGLE_FORM_EMAIL_ID, formState.email)
+        console.log('Append Email', formData)
+        formData.append(GOOGLE_FORM_MESSAGE_ID, formState.message)
+        console.log('Append Message', formData)
+        axios.post(CORS_PROXY + GOOGLE_FORM_ACTION, formData)
+            .catch(() => {
+                console.log('Submit Form', formData)
+            })
 
-        )
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+
+
         e.target.reset();
         setFormState({ name: '', email: '', message: '' });
 
