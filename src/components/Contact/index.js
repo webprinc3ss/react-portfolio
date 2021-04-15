@@ -2,15 +2,23 @@ import React, { useState } from 'react';
 import axios from 'axios'
 import { validateEmail } from '../../utils/helpers';
 
-const GOOGLE_FORM_NAME_ID = 'entry.1249636003'
-const GOOGLE_FORM_EMAIL_ID = 'entry.905026920'
-const GOOGLE_FORM_MESSAGE_ID = 'entry.1193345509'
+
+// const config = {
+//     cors: 'https://cors-anywhere.herokuapp.com/', // <optional> doesn't display the cors error
+//     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfmn0zTMFMzg2mRGU6-B52T3qOEriwtjG1s7tv3-KTT2FWjug/formResponse'
+// };
+
+// const GOOGLE_FORM_NAME_ID = 'entry.1249636003'
+// const GOOGLE_FORM_EMAIL_ID = 'entry.905026920'
+// const GOOGLE_FORM_MESSAGE_ID = 'entry.1193345509'
 const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
 const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfmn0zTMFMzg2mRGU6-B52T3qOEriwtjG1s7tv3-KTT2FWjug/formResponse'
 
 
 function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [formState, setFormState] = useState({
+        name: '', email: '', message: ''
+    });
 
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
@@ -23,7 +31,7 @@ function Contact() {
     // };
 
     const handleChange = (e) => {
-        if (e.target.name === 'email') {
+        if (e.target.name === 'entry.124963600') {
             const isValid = validateEmail(e.target.value);
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
@@ -46,25 +54,28 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        const formData = new FormData();
-        formData.append(GOOGLE_FORM_NAME_ID, formState.name)
-        console.log('Append Name', formData)
-        formData.append(GOOGLE_FORM_EMAIL_ID, formState.email)
-        console.log('Append Email', formData)
-        formData.append(GOOGLE_FORM_MESSAGE_ID, formState.message)
-        console.log('Append Message', formData)
+        const formData = {
+            ...formState
+        }
+        console.log('Submit Form', formState);
+        // formData.append(GOOGLE_FORM_NAME_ID, formState.name)
+        // formData.append(GOOGLE_FORM_EMAIL_ID, formState.email)
+        // formData.append(GOOGLE_FORM_MESSAGE_ID, formState.message)
         axios.post(CORS_PROXY + GOOGLE_FORM_ACTION, formData)
+            .then(() => {
+                e.target.reset()
+                setFormState({ name: '', email: '', message: '' })
+            })
             .catch(() => {
                 console.log('Submit Form', formData)
             })
-
-
-
-        e.target.reset();
-        setFormState({ name: '', email: '', message: '' });
+        // e.target.reset()
+        // setFormState({ name: '', email: '', message: '' });
 
     };
-
+    // const GOOGLE_FORM_NAME_ID = 'entry.1249636003'
+    // const GOOGLE_FORM_EMAIL_ID = 'entry.905026920'
+    // const GOOGLE_FORM_MESSAGE_ID = 'entry.1193345509'
     return (
         <section id="container">
             <h2>Contact Me</h2>
@@ -72,15 +83,15 @@ function Contact() {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    <input type="text" name="entry.124963600" defaultValue={name} onBlur={handleChange} />
                 </div>
                 <div>
                     <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                    <input type="text" name="entry.905026920" defaultValue={email} onBlur={handleChange} />
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    <textarea name="entry.1193345509" rows="5" defaultValue={message} onBlur={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>
