@@ -292,6 +292,11 @@ form label {
   display: block;
 }
 
+.error-text {
+  color:#ff0d7b;
+  weight: bold;
+}
+
 .byline {
   font-size: 90% !important;
   margin-bottom: 15px;
