@@ -1,63 +1,51 @@
-import React, { useState } from 'react';
+import React from "react";
+import { useForm } from "react-hook-form";
 
-import { validateEmail } from '../../utils/helpers';
+const Contact = () => {
 
-function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+    const onSubmit = (data) => console.log(data);
 
-    const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, message } = formState;
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log('Submit Form', formState);
-        }
-    };
-
-    const handleChange = (e) => {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            }
-        }
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-            console.log('Handle Form', formState);
-        }
-    };
 
     return (
         <section id="container">
             <h2>Contact Me</h2>
             <h4 className="contactH4"><b><a className="inner" href="mailto:djabranton@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 0 2 . 5 5 5 . 5 5 5 5</b></h4>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    <label>Name:</label>
+                    <input
+                        id="name"
+                        aria-invalid={errors.name ? "true" : "false"}
+                        {...register('name', { required: true })}
+                    />
+
+                    {/* use role="alert" to announce the error message */}
+                    {errors.name && errors.name.type === "required" && (
+                        <span className="error-text" role="alert">Name is required</span>
+                    )}
                 </div>
                 <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                    <label>Email address:</label>
+                    <input id="email"  {...register('email', { required: true, pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/ })} />
+                    {errors.email && errors.email.type === "required" && (
+                        <span className="error-text">Email is required.</span>
+                    )}
+                    {errors.email && errors.email.type === "pattern" && (
+                        <span className="error-text">Email is not valid.</span>
+                    )}
                 </div>
                 <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    <label>Message:</label>
+                    <textarea id="message" rows="5" {...register('message', { required: true })} />
+                    {errors.name && errors.name.type === "required" && (
+                        <span className="error-text" role="alert">Message is required</span>
+                    )}
                 </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
                 <button type="submit">Submit</button>
             </form>
         </section>
